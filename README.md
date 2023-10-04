@@ -1,4 +1,4 @@
 # FullStack
-Guardar projetos curso 3Way
-    Aula 1
-        Fundamentos HTML
+Guardar projetos curso 3Way <br>
+    Aula 1 - Fundamentos HTML
+    Aula 2 -

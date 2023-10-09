@@ -1,0 +1,124 @@
+.external {
+    color: white;
+    background-color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 490px 10px;
+    text-align: center;
+    
+}
+
+.p-impar {
+    background-color: rgb(240, 162, 162);
+    margin: 20px 490px 20px;
+    font-family: Verdana, sans-serif;
+}
+
+.text-cooler {
+    font-size: 24px;
+}
+
+.element-2 {
+    color: blue;
+    margin-left: 490px;
+    font-size: 36px;
+}
+
+.element-4 {
+    background-color: rgb(102, 226, 185);
+    font-size: 24px;
+    margin: 20px 490px 20px;
+    font-weight: bold;
+}
+
+.style-button{
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+    border-color: rgb(177, 173, 173);
+}
+
+.primary-button {
+    color: white;
+    background-color: black;
+    margin-left: 490px;
+}
+
+.secondary-button {
+    background-color: yellow;
+}
+
+.titulo {
+    margin: 50px 300px 20px;
+}
+
+.max-width {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.one {
+    background: pink;
+    border: 3px solid blue;
+    /* ALTERE-ME */
+    padding: 30px;
+    margin: 10px;
+    }
+
+.two {
+    background: lightblue;
+    border: 3px solid purple;
+    /* ALTERE-ME */
+    margin-bottom: 40px;
+    }
+
+.three {
+    background: peachpuff;
+    border: 3px solid brown;
+    width: 200px;
+    /* ALTERE-ME */
+    padding: 30px;
+    margin-left: 410px;
+    }
+
+.body-exerc7 {
+    background: #eee;
+    font-family: sans-serif;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    }
+        
+.card {
+    width: 410px;
+    background: #fff;
+    margin: 16px auto;
+    border: 8px solid white;
+    }
+
+.title {
+    background: #e3f4ff;
+    margin: 8px auto;
+    font-size: 18px;
+    padding: 6px;
+    }
+
+.content {
+    background: #e3f4ff;
+    margin: 8px auto;
+    padding: 15px;
+    }
+
+.button-container {
+    background: #e3f4ff;
+    text-align: center;
+    padding: 15px;
+    }
+
+button {
+    background: white;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 5px auto;    
+    }
+    

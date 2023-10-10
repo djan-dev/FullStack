@@ -1,57 +1,130 @@
+/* Exercício 1 */
 .external {
     color: white;
     background-color: red;
     font-size: 40px;
     font-weight: bold;
-    margin: 10px 490px 10px;
     text-align: center;
-    
+
 }
 
-.p-impar {
-    background-color: rgb(240, 162, 162);
-    margin: 20px 490px 20px;
-    font-family: Verdana, sans-serif;
+/* Fim exercício 1 */
+
+
+/* Exercício 2 */
+.number-1,
+.number-3,
+.number-5 {
+    background-color: lightcoral;
+    font-family: Verdana, "Dejavu Sans"sans-serif;
 }
 
-.text-cooler {
-    font-size: 24px;
-}
-
-.element-2 {
+#number-2 {
     color: blue;
-    margin-left: 490px;
     font-size: 36px;
 }
 
-.element-4 {
+.number-3 {
+    font-size: 24px;
+}
+
+#number-4 {
     background-color: rgb(102, 226, 185);
     font-size: 24px;
-    margin: 20px 490px 20px;
     font-weight: bold;
 }
 
-.style-button{
+/* Fim exercício 2 */
+
+
+/* Exercício 3 */
+.btn-1,
+.btn-2 {
     font-size: 28px;
     font-family: Helvetica, 'Times New Roman', sans-serif;
-    border-color: rgb(177, 173, 173);
 }
 
-.primary-button {
-    color: white;
+.btn-1 {
     background-color: black;
-    margin-left: 490px;
+    color: white;
 }
 
-.secondary-button {
+.btn-2 {
     background-color: yellow;
+    color: black;
 }
 
-.titulo {
-    margin: 50px 300px 20px;
+/*Fim exercício 3*/
+
+
+/*Exercício 4*/
+.texto-injetado {
+    margin-bottom: -25px;
+    text-align: center;
 }
 
-.max-width {
+.caixa {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+}
+
+.caixa-amarela {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.caixa-vermelha {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+}
+
+.caixa-azul {
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+}
+
+/*Fim exercício 4*/
+
+/* Exercício 5*/
+.texto-injetado-exec5 {
+    margin-bottom: -25px;
+    text-align: center;
+}
+
+.caixa-exec5 {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+}
+
+.caixa-amarela-exec5 {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.caixa-vermelha-exec5 {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.caixa-azul-exec5 {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+/*Fim exercício 5*/
+
+
+/* Exercício 6 */
+.body-max-width {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -61,15 +134,15 @@
     border: 3px solid blue;
     /* ALTERE-ME */
     padding: 30px;
-    margin: 10px;
-    }
+    margin: 12px;
+}
 
 .two {
     background: lightblue;
     border: 3px solid purple;
     /* ALTERE-ME */
-    margin-bottom: 40px;
-    }
+    margin-bottom: 48px;
+}
 
 .three {
     background: peachpuff;
@@ -77,48 +150,53 @@
     width: 200px;
     /* ALTERE-ME */
     padding: 30px;
-    margin-left: 410px;
-    }
+    margin-left: 335px;
+}
 
-.body-exerc7 {
+/*Fim exercício 6*/
+
+
+/* Exercício 7 */
+.body-exec7 {
     background: #eee;
     font-family: sans-serif;
-    max-width: 700px;
+    max-width: 600px;
     margin: auto;
     padding-top: 5px;
     padding-bottom: 60px;
-    }
-        
+}
+
 .card {
     width: 410px;
     background: #fff;
     margin: 16px auto;
     border: 8px solid white;
-    }
+}
 
 .title {
     background: #e3f4ff;
-    margin: 8px auto;
+    margin: 1px auto;
     font-size: 18px;
     padding: 6px;
-    }
+}
 
 .content {
     background: #e3f4ff;
     margin: 8px auto;
     padding: 15px;
-    }
+}
 
 .button-container {
     background: #e3f4ff;
     text-align: center;
     padding: 15px;
-    }
+}
 
 button {
     background: white;
     border: 1px solid #eee;
     padding: 5px;
-    margin: 5px auto;    
-    }
-    
+    margin: 5px auto;
+    font-weight: 600;
+}
+/*Fim exercício 7*/

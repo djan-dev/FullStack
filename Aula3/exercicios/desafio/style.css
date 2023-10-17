@@ -1,0 +1,27 @@
+/* Aula 5 - FLEX do Desafio */
+.flex-container {
+    background-color: peachpuff;
+    width: 600px;
+    height: 220px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.flex-item {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preço de Custo</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Faça um algoritmo que receba o preço de custo de um produto e mostre o
+      valor de venda. Sabe-se que o preço de custo receberá um acréscimo de
+      acordo com um percentual informado pelo usuário
+    </p>
+
+    <script>
+      let precoCusto, valorVenda, acrescimo, percentual;
+
+      precoCusto = Number(prompt("Digite o preco de custo"));
+      percentual = Number(prompt("Informe o percentual de acréscimo"));
+
+      acrescimo = (precoCusto * percentual) / 100;
+      valorVenda = precoCusto + acrescimo;
+
+      console.log(`O valor da venda do produto é ${valorVenda}`);
+    </script>
+  </body>
+</html>

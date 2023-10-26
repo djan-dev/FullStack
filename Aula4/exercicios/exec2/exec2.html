@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de 2 números</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Faça um algoritmo que receba dois números e ao final mostre a soma,
+      subtração, multiplicação e a divisão dos números lidos
+    </p>
+
+    <script>
+      let resultado;
+      let num1 = Number(prompt("Digite o primeiro valor"));
+      let num2 = Number(prompt("Digite o segundo valor"));
+
+      resultado = num1 + num2;
+      console.log(`A soma dos números é ${resultado}`);
+
+      resultado = num1 - num2;
+      console.log(`A subtração dos números é ${resultado}`);
+
+      resultado = num1 * num2;
+      console.log(`A multiplicação dos números é ${resultado}`);
+
+      resultado = num1 / num2;
+      console.log(`A divisão dos números é ${resultado}`);
+    </script>
+  </body>
+</html>

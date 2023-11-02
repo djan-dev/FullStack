@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exec - Estação com Switch case</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Faça um algoritmo que receba a estação do ano e informe qual a estção
+      correspondente
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let estacao = prompt('informe a estação do ano').toLowerCase();
+      switch (estacao) {
+        case "verão":
+          console.log('estação do sol');
+          break;
+        case "primavera":
+          console.log('estação das flores');
+          break;
+        case "inverno":
+          console.log('estação do frio');
+          break;
+        case "outono":
+          console.log('estação das frutas');
+          break;
+        default:
+            console.log('estação inválida');
+      }
+    </script>
+  </body>
+</html>

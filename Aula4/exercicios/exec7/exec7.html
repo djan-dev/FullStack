@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exec 7</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Escrever um algoritmo que leia o nome e as três notas obtidas por um aluno
+      durante o semestre. Calcular a sua média (aritmética), informar o nome e
+      sua menção aprovado (media >= 7), Reprovado (media <= 5) e Recuperação
+      (media entre 5.1 a 6.9)
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let nome = prompt("informe seu nome");
+      let nota1 = Number(prompt("informe a primeira nota "));
+      let nota2 = Number(prompt("informe a segunda nota "));
+      let nota3 = Number(prompt("informe a terceira nota "));
+      let media = (nota1 + nota2 + nota3) / 3;
+
+      if (media >= 7) {
+        console.log(`${nome} a sua média foi ${media} e você está aprovado`);
+      } else if (media <= 5) {
+        console.log(`${nome} a sua média foi ${media} e você está reprovado`);
+      } else {
+        console.log(`${nome} a sua média foi ${media} e você está de recuperação`);
+      }
+    </script>
+  </body>
+</html>

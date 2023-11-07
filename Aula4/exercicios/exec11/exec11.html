@@ -9,21 +9,56 @@
     <h2>Executar no console para ver o resultado</h2>
     <p>
       Escrever um algoritmo para uma empresa que decide dar um reajuste a seus
-      funcionários de acordo com os seguintes critérios: 
-      a. 50% para aqueles que ganham menos do que três salários mínimos; 
-      b. 20% para aqueles que ganham entre três até dez salários mínimos; 
-      c. 15% para aqueles que ganham acima de dez até vinte salários mínimos; 
-      d. 10% para os demais funcionários. 
-      1. Leia o nome do funcionário, seu salário e o valor do salário mínimo. 
-      2. Calcule o seu novo salário reajustado. Escrever o nome do funcionário, o
-         reajuste e seu novo salário. 
-      3. Calcule quanto à empresa vai aumentar sua folha de pagamento
+      funcionários de acordo com os seguintes critérios: a. 50% para aqueles que
+      ganham menos do que três salários mínimos; b. 20% para aqueles que ganham
+      entre três até dez salários mínimos; c. 15% para aqueles que ganham acima
+      de dez até vinte salários mínimos; d. 10% para os demais funcionários. 1.
+      Leia o nome do funcionário, seu salário e o valor do salário mínimo. 2.
+      Calcule o seu novo salário reajustado. Escrever o nome do funcionário, o
+      reajuste e seu novo salário. 3. Calcule quanto à empresa vai aumentar sua
+      folha de pagamento
     </p>
 
     <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
 
     <script>
+      let continuar;
+      let nomeDoFuncionario;
+      let salarioDoFuncionario,
+        qtdeSalario,
+        aumentoDaFolha = 0,
+        valorReajuste;
+      let salarioMinimo = 1000;
 
+      do {
+        nomeDoFuncionario = prompt("Entre com o nome do funcionário") + ", ";
+        qtdeSalario = prompt("Este funcionário ganha quantos salários");
+
+        if (qtdeSalario < 3) {
+          valorReajuste = salarioMinimo * qtdeSalario * 0.5;
+          salarioDoFuncionario = salarioMinimo + valorReajuste;
+        } else if (qtdeSalario <= 10) {
+          valorReajuste = salarioMinimo * qtdeSalario * 0.2;
+          salarioDoFuncionario = salarioMinimo + valorReajuste;
+        } else if (qtdeSalario <= 20) {
+          valorReajuste = salarioMinimo * qtdeSalario * 0.15;
+          salarioDoFuncionario = salarioMinimo + valorReajuste;
+        } else {
+          valorReajuste = salarioMinimo * qtdeSalario * 0.1;
+          salarioDoFuncionario = salarioMinimo + valorReajuste;
+        }
+
+        aumentoDaFolha += salarioDoFuncionario - salarioMinimo;
+        console.log(
+          `O funcionário ${nomeDoFuncionario} teve o aumento de ${valorReajuste}, seu novo salário passa a ser ${salarioDoFuncionario}`
+        );
+
+        continuar = prompt("Deseja continuar S/N?").toUpperCase();
+      } while (continuar === "S");
+
+      console.log(
+        `A empresa terá um aumento de ${aumentoDaFolha} na sua folha de pagamento para os seus funcionários`
+      );
     </script>
   </body>
 </html>

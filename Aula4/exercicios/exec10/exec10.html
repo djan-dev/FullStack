@@ -17,5 +17,41 @@
     </p>
 
     <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let continuar;
+      let valorDoVeiculo = 0;
+      let valorDesconto = 0;
+      let percentualDesconto = 0;
+      let valorPago = 0;
+      let tipoCombustivel;
+
+      do {
+        valorDoVeiculo = prompt("Entre com o valor do veículo");
+        tipoCombustivel = prompt(
+          "Informe o tipo de combustível: 1-Álcool | 2-Gasolina | 3-Diesel"
+        );
+
+        switch (tipoCombustivel) {
+          case "1":
+            percentualDesconto = 0.25;
+            break;
+          case "2":
+            percentualDesconto = 0.21;
+            break;
+          default:
+            percentualDesconto = 0.14;
+        }
+
+        valorDesconto += valorDoVeiculo * percentualDesconto;
+        valorPago += valorDoVeiculo - valorDesconto;
+
+        continuar = prompt("Deseja continuar S/N?").toUpperCase();
+      } while (continuar === "S");
+
+      console.log(
+        `O Total a ser pago pelo cliente é de R$: ${valorPago}, o total de desconto foi de ${valorDesconto}`
+      );
+    </script>
   </body>
 </html>

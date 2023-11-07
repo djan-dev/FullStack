@@ -18,5 +18,40 @@
     </p>
 
     <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let continuar, anoVeiculo;
+      let valorVeiculo,
+        valorDesconto,
+        decrescimo,
+        valorFinal,
+        totalCarrosAte2000 = 0,
+        totalGeral = 0;
+
+      do {
+        anoVeiculo = Number(prompt("Informe o ano do veículo:"));
+        valorVeiculo = Number(prompt("Informe o valor do veículo:"));
+
+        if (anoVeiculo <= 2000) {
+          valorDesconto = 0.12;
+          totalCarrosAte2000++;
+        } else {
+          valorDesconto = 0.07;
+        }
+
+        decrescimo = valorVeiculo * valorDesconto;
+        valorFinal = valorVeiculo - decrescimo;
+        console.log(
+          `Carro '${totalGeral}' com ano '${anoVeiculo}': valor final  ${valorFinal}`
+        );
+
+        totalGeral++;
+
+        continuar = prompt("Deseja continuar S/N?");
+      } while (continuar === "S");
+
+      console.log(`Total de carros com ano <= 2000: ${totalCarrosAte2000}`);
+      console.log(`Total Geral de carros: ${totalGeral}`);
+    </script>
   </body>
 </html>

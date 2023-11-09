@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exec 17</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Faça um algoritmo para criar um vetor real de 10 posições: as 5 primeiras
+      são informados pelo usuário, e as 5 seguintes são os mesmos números em
+      ordem inversa
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let arr = [];
+      let j = 1;
+
+      for (let i = 0; i < 10; i++) {
+        if (i < 5) {
+          arr[i] = prompt("entre com um valor inteiro");
+        } else {
+          arr[i] = arr[i - j];
+          j += 2;
+        }
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

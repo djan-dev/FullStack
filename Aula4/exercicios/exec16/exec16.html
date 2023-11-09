@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exec 16</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Escreva um algoritmo que leia 10 valores reais e armazene em um vetor.
+      Modifique o vetor de modo que os valores das posições impares sejam
+      aumentados em 5%, e os das posições pares sejam aumentados em 2%. Imprima
+      depois o vetor resultante
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let arr = [];
+      for (let i = 0; i < 5; i++) {
+        arr[i] = prompt("entre com um valor inteiro");
+      }
+      for (let i = 0; i <= arr.length - 1; i++) {
+        if (i % 2 === 1) {
+          console.log(Number(arr[i]) + Number(arr[i]) * 0.05);
+        } else {
+          console.log(Number(arr[i]) + Number(arr[i]) * 0.02);
+        }
+      }
+    </script>
+  </body>
+</html>

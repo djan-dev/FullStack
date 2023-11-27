@@ -1,0 +1,49 @@
+.container {
+    display: inline-grid;
+    background-color: orange;
+
+    grid-template: 40px 40px 40px 40px/40px 80px 40px;
+    grid-template-areas:
+        "um     um      um"
+        "dois   tres    quatro"
+        "cinco  tres    seis"
+        "cinco  sete    sete"
+    ;
+}
+
+.bloco {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+
+#um {
+    grid-area: um;
+}
+
+#dois {
+    grid-area: dois;
+    background-color: green;
+}
+
+#tres {
+    grid-area: tres;
+}
+
+#quatro {
+    grid-area: quatro;
+    background-color: green;
+}
+
+#cinco {
+    grid-area: cinco;
+}
+
+#seis {
+    grid-area: seis;
+    background-color: green;
+}
+
+#sete {
+    grid-area: sete;
+}

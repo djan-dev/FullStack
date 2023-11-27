@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exec 22</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Crie um programa para simular a gratificação de um vendedor de uma loja de
+      carros usados. O sistema deve solicitar o salário básico do funcionário e
+      o mês que deseja simular o salário com a gratificação. A gratificação
+      corresponde a 30% do salário básico do funcionário nos meses de janeiro
+      até maio. De junho até novembro a gratificação corresponde a 40% do
+      salário básico. Em dezembro, a gratificação equivale a 60% do salário. O
+      sistema deve apresentar a gratificação dentro de uma função que receba o
+      salário por parâmetro.
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      //exercício 22
+      let salario = Number(prompt("Entre com o salário do funcionário"));
+      let mes = Number(prompt("Entre com o mês de cálculo do salário"));
+      let totalSalario = 0;
+
+      const calculaSalario = function (salario, mes) {
+        if (mes >= 1 && mes <= 5) {
+          totalSalario = salario + salario * 0.3;
+        } else if (mes >= 6 && mes <= 11) {
+          totalSalario = salario + salario * 0.4;
+        } else {
+          totalSalario = salario + salario * 0.6;
+        }
+        console.log(`Valor do salário a ser pago R$ ${totalSalario}`);
+      };
+
+      calculaSalario(salario, mes);
+    </script>
+  </body>
+</html>

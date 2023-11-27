@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exec 23</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      O IMC (Índice de Massa Corporal), pode ser calculado dividindo-se o peso
+      da pessoa (em kg) pela altura (h em metros) elevada ao quadrado (IMC=
+      m/h²). Escreva um programa que leia o peso e a altura de uma pessoa,
+      calcule e mostre o IMC e a faixa em que o indivíduo se enquadra de acordo
+      com a tabela abaixo:
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let peso = Number(prompt("Entre com o peso"));
+      let altura = Number(prompt("Entre com a altura"));
+
+      console.log(CalculaIMC(peso, altura));
+
+      function CalculaIMC(peso, altura) {
+        let imc = peso / (altura * altura);
+        if (imc < 18.5) {
+          return `Peso ${peso}: Normal`;
+        } else if (imc < 25) {
+          return `Peso ${peso}: Sobrepeso`;
+        } else if (imc < 30) {
+          return `Peso ${peso}: Obesidade grau 1`;
+        } else if (imc < 35) {
+          return `Peso ${peso}: Obesidade grau 2`;
+        } else if (imc > 40) {
+          return `Peso ${peso}: Obesidade grau 3`;
+        }
+      }
+    </script>
+  </body>
+</html>

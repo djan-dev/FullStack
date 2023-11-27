@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exec 21</title>
+  </head>
+  <body>
+    <h2>Executar no console para ver o resultado</h2>
+    <p>
+      Você foi contratado por uma loja de venda de livros usados na internet e
+      tem que realizar a simulação do valor de entrega dos pedidos. O seu
+      programa deve solicitar ao vendedor o total a ser pago pelo cliente e qual
+      o prazo de entrega desejado (3, 5, 7 ou 10 dias úteis). Para cada tipo de
+      entrega, deve ser criada uma nova função que receba o valor total pago
+      pelo cliente. As entregas disponíveis são as seguintes: 1 - Entrega em 3
+      dias úteis (adicionar R$ 25,00 reais ao valor pago pelo cliente), 2 -
+      Entrega em 5 dias úteis (adicionar R$ 20,00 reais ao valor pago pelo
+      cliente), 3 - Entrega em 7 dias úteis (adicionar R$ 15,00 reais ao valor
+      pago pelo cliente) e 4 - Entrega em 10 dias úteis (adicionar R$ 10,00
+      reais ao valor pago pelo cliente)
+    </p>
+
+    <p><a href="../../index.html">Retornar ao índice de exercícios</a></p>
+
+    <script>
+      let total = Number(prompt("Informe o total a ser pago pelo cliente"));
+      let prazo = Number(prompt("Informe qual o prazo de entrega: 3, 5, 7 ou 10 dias"));
+      let totalGeral = 0;
+
+      switch (prazo) {
+        case 3:
+          TresDias(total);
+          break;
+        case 5:
+          CincoDias(total);
+          break;
+        case 7:
+          SeteDias(total);
+          break;
+        default:
+          DezDias(total);
+          break;
+      }
+
+      function TresDias(total) {
+        totalGeral = total + 25;
+      }
+
+      function CincoDiastotal() {
+        totalGeral = total +  20;
+      }
+
+      function SeteDias(total) {
+        totalGeral = total +  15;
+      }
+
+      function DezDias(total) {
+        totalGeral = total +  10;
+      }
+
+      console.log(`Total a ser pago cliente R$ ${totalGeral}`);
+    </script>
+  </body>
+</html>

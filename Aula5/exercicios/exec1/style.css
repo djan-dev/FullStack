@@ -1,0 +1,89 @@
+.container {
+    display: inline-grid;
+    background-color: lightblue;
+
+    /* CÓDIGO COMPLETO EM 2 LINHAS
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px; */
+
+    /* CÓDIGO REDUZINHO EM 1 LINHA*/
+    grid-template: 40px 40px 40px 40px 40px/40px 40px 40px 40px 40px;
+
+    grid-template-areas:
+        "living-room living-room living-room living-room living-room"
+        "living-room living-room living-room living-room living-room"
+        "bathroom   bedroom      bedroom     kitchen     kitchen"
+        "bathroom   bedroom      bedroom     kitchen     kitchen"
+        "bathroom   closed       closed      kitchen     kitchen"
+    ;
+}
+
+.room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+}
+
+#living-room {
+    /*  CÓDIGO COMPLETO 4 LINHAS
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    grid-area: living-room;
+}
+
+#kitchen {
+    /* CÓDIGO REDUZIDO EM 2 LINHAS
+    grid-column: 4/6;
+    grid-row: 3/6; */
+
+    /* CÓDIGO REDUZIDO EM 1 LINHA
+    grid-area: 3/4/6/6; */
+
+    /* CÓDIGO REDUZINO EM 1 LINHA FAZENDO USO DO grid-template-areas "MAPEADO PELO NOME"
+       FORMA MAIS CLARA, QUE DEIXA O CÓDIGO MAIS LEGÍVEL*/
+    grid-area: kitchen;
+}
+
+#bathroom {
+    /* CÓDIGO REDUZIDO EM 2 LINHAS
+    grid-column: 1/2;
+    grid-row: 3/6; */
+
+    /* CÓDIGO REDUZIDO EM 1 LINHA
+    grid-area: 3/1/6/2; */
+
+    /* CÓDIGO REDUZINO EM 1 LINHA FAZENDO USO DO grid-template-areas "MAPEADO PELO NOME"
+       FORMA MAIS CLARA, QUE DEIXA O CÓDIGO MAIS LEGÍVEL*/
+    grid-area: bathroom;
+}
+
+#bedroom {
+    /* 
+    CÓDIGO REDUZIDO EM 2 LINHAS
+    grid-column: 2/4;
+    grid-row: 3/5; */
+
+    /* CÓDIGO REDUZIDO EM 1 LINHA
+    grid-area: 3/2/5/4; */
+
+    /* CÓDIGO REDUZINO EM 1 LINHA FAZENDO USO DO grid-template-areas "MAPEADO PELO NOME"
+       FORMA MAIS CLARA, QUE DEIXA O CÓDIGO MAIS LEGÍVEL*/
+    grid-area: bedroom;
+}
+
+#closed {
+    /* 
+    CÓDIGO REDUZIDO EM 2 LINHASgrid-column: 2/4;
+    grid-row: 5/6; */
+
+    /* CÓDIGO REDUZIDO EM 1 LINHA
+    grid-area: 5/2/6/4; */
+
+    /* CÓDIGO REDUZINO EM 1 LINHA FAZENDO USO DO grid-template-areas "MAPEADO PELO NOME"
+       FORMA MAIS CLARA, QUE DEIXA O CÓDIGO MAIS LEGÍVEL*/
+    grid-area: closed;
+}

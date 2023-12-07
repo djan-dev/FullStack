@@ -193,6 +193,49 @@ const calculatePerimeterAux = ({width, height}) => {
 }
 console.log(calculatePerimeterAux(rect));
 
+//operador rest operator - usado no lado esquerdo da atribuição
+//
+//   Com array
+const [b, c, ...everythingElse] = [0, 1, 1, 2, 3, 5, 8];
+console.log(b);
+console.log(c);
+console.log(everythingElse);
+//   Com objeto
+const {street, ...address} = {
+  street: 'Rua oiapoque',
+  postalcode: '74330480',
+  city: 'Goiânia',
+}
+console.log(street);
+console.log(address);
+//   Com função
+function concat(...strings){
+  return strings.join(' ');
+}
+console.log(concat('djan', 'gomes', 'tavares', 'mais'));
 
+//operador spread operator - usado no lado esquerdo da atribuição
+//    Com array
+const oneToThree = [1, 2, 3];
+const oneToSix = [...oneToThree, 4, 5, 6];
+console.log(oneToSix);
+const woow = ['A', ...oneToThree, 'B', 'C', 'D', 'E', ...oneToSix, 42, ...oneToThree];
+console.log(woow);
+//    Com objeto
+let addressAux = {
+  postalcode: '74330480',
+  city: 'Berlim',
+}
+addressAux = {...addressAux, country: 'Alemanha'};
+console.log(addressAux);
+
+//JSON - Java Script Object Notation
+//    JSON.parse() - Converte JSON em Objeto
+const myJSON = '{"name":"djan", "age":"43", "city":"goiania"}';
+console.log(myJSON);
+const objectAux =  JSON.parse(myJSON);
+console.log(objectAux);
+//    JSON.stringify() - Converte Objeto em JSON
+console.log(JSON.stringify(objectAux));
 
 //Final de aula sobre objetos no JS ******************************

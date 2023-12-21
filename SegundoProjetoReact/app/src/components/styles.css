@@ -1,0 +1,130 @@
+.fundo {
+    width: 550px;
+    height: 868px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    background: #23252C;
+}
+
+.img-foto {
+    width: 317px;
+    height: 317px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.fundo-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 317px;
+    height: 399px;
+    flex-shrink: 0;
+    background: #1A1B21;
+}
+
+.fundo-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 317px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: #161619;
+}
+
+h1 {
+    width: 178.065px;
+    height: 0px;
+    flex-shrink: 0;
+    color: #FFF;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: #F5F5F5;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+h3 {
+    width: 178.065px;
+    height: 0px;
+    
+    color: #F3BF99;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5 {
+    width: 228px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 15.36px */
+}
+
+p {
+    width: 247px;
+    height: 61px;
+    flex-shrink: 0;
+    color: #DCDCDC;
+    font-family: Inter;
+    font-size: 10.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+button {
+    display: flex;
+    width: 247px;
+    padding: 9px 13px 9px 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--gray-300, #D1D5DB);
+    background: var(--white, #FFF);
+
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+    color: var(--gray-700, #374151);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.parte-um {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

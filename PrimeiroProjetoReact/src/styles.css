@@ -6,7 +6,6 @@ body {
     margin: 0;
     font-family: Inter, sans-serif;
     height: 100vh;
-    background-color: #282D35;
     width: 550px;
     height: 459px;
     flex-shrink: 0;
@@ -47,7 +46,8 @@ main {
     background-image: url(../public/images/logo-react-back.png);
     background-repeat: no-repeat;
     background-position: right 60%;
-    background-size: 140px;
+    background-size: 190px;
+    background-color: #282D35;
 }
 
 .main-title {
